@@ -33,6 +33,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sample-pod
+  user: <write-your-email-address>
+  phone: xxx-xxx-xxxx
 spec:
   containers:
   - name: pytorch-container
@@ -47,6 +49,8 @@ spec:
 ```
 
 Let the above file be stored as `pytorch-gpu-pod.yaml (can be downloaded from [here](sample_scripts/pytorch-gpu-pod.yaml).
+
+:warning: *The pod started without email address or phone number will be terminated if they are running for more than 12 hours.*
 
 ### Launching Pod
 You can launch your pod on luberenetes cluster by executing: ```kubectl create -f pytorch-gpu-pod.yaml -n <name_space>```. You can check the status of the pod using: ```kubectl get pods -n <name_space>```. Once the pod status is "Running", your pod is ready to be used.
