@@ -57,7 +57,7 @@ Once the pod status is "Running", you can can ssh into the the container using: 
 ### About Data
 Note that the data is lost, once the container is killed/terminated. So, we need to create persistent volume. The post will be updated to elaborate on the same soon.
 
-## To DO
+## To Do
 - Example for file transfer between containers and localhost
 - Example for persistent storage
 
