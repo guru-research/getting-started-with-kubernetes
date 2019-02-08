@@ -50,13 +50,16 @@ spec:
 
 Let the above file be stored as `pytorch-gpu-pod.yaml (can be downloaded from [here](sample_scripts/pytorch-gpu-pod.yaml).
 
-:warning: *The pod started without email address or phone number will be terminated if they are running for more than 12 hours.*
-
 ### Launching Pod
 You can launch your pod on luberenetes cluster by executing: ```kubectl create -f pytorch-gpu-pod.yaml -n <name_space>```. You can check the status of the pod using: ```kubectl get pods -n <name_space>```. Once the pod status is "Running", your pod is ready to be used.
 
+:warning: *The pod started without email address or phone number will be terminated if they are running for more than 12 hours.*
+
 ### SSH into the Containiner
 Once the pod status is "Running", you can can ssh into the the container using: ```kubectl exec -it sample-pod -- /bin/bash```. If your pod is running multiple containers, you can ssh into specific container, say, `pytorch-container` here, by executing: ```kubectl exec -it sample-pod -c pytorch-container -- /bin/bash```.
+
+### Terminating the pod
+Once you are done with your work, kindly terminate the pod so that the resources can be used by others. To delete the pod, execute: ``kubectl delete pod <name-of-the-pod>``
 
 ### About Data
 Note that the data is lost, once the container is killed/terminated. So, we need to create persistent volume. The post will be updated to elaborate on the same soon.
