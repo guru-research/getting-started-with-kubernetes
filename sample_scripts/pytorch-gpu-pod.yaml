@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: sample-pod
+  user: <write-your-email-address>
+  phone: xxx-xxx-xxxx
 spec:
   containers:
   - name: pytorch-container
