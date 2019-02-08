@@ -1,3 +1,6 @@
 title: Getting Started with Kubernetes
 description: A short tutorial on how to use kuberenetes cluster.
 theme: jekyll-theme-cayman
+
+plugins:
+  - jemoji
