@@ -1,3 +1,8 @@
+---
+owner_url: https://sumitbinnani.github.io
+owner_name: Sumit Binnani
+---
+
 # Getting Started with Kubernetes
 ---
 
@@ -57,6 +62,6 @@ Note that the data is lost, once the container is killed/terminated. So, we need
 - Example for persistent storage
 
 ## Other
-Read the Wiki: https://wiki.nautilus.optiputer.net/wiki/Main_Page
-Register in our Rocket Chat: https://rocket.nautilus.optiputer.net
-Ask Question on rocket chat :-)
+- Read the Wiki: https://wiki.nautilus.optiputer.net/wiki/Main_Page
+- Register in our Rocket Chat: https://rocket.nautilus.optiputer.net
+- Ask Question on rocket chat :-)
